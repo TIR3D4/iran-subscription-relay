@@ -1,0 +1,6 @@
+Options -Indexes
+<FilesMatch "^(config.*\.php|setup-key.*\.php|relay\.php|.*\.lock)$">
+    Require all denied
+</FilesMatch>
+RewriteEngine On
+RewriteRule ^sub/[A-Za-z0-9_-]+(?:/[A-Za-z0-9_-]+)*/?$ index.php [END,QSA]

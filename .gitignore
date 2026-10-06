@@ -1,0 +1,4 @@
+src/config.php
+src/setup-key.php
+src/*.lock
+*.log
